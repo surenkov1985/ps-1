@@ -3,12 +3,14 @@ import * as React from 'react';
 import {ButtonHTMLAttributes} from "react";
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement > {
-    isCircle: boolean
-    variant?: string
+    color: string
+    variant: string
+    text: string
+    size:string
 }
 export const Button = (props: ButtonProps) => {
     return (
-        <button {...props} onClick={props.onClick}>{props.title}</button>
+        <button className={`btn btn-${props.variant} btn-${props.size} btn-${props.color}`} onClick={props.onClick}>{props.text}</button>
     );
 };
 

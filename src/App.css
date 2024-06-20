@@ -32,4 +32,8 @@ ul {
 h3 {
   margin-top: 0;
 }
+btn {
+  display: block;
+  padding: 0.5rem 2rem;
+}
 

@@ -205,9 +205,9 @@ function App() {
                     )
                 })}
             </table>
-                <Button title={'All'} onClick={() => changeFilter('All')} isCircle={true} variant={"green"} />
-                <Button title={'Dollars'} onClick={() => changeFilter('Dollars')} isCircle={true}/>
-                <Button title={'RUBLS'} onClick={() => changeFilter('RUBLS')} isCircle={true}/>
+                <Button text={'All'} onClick={() => changeFilter('All')}  variant={"circle"}  color={'primary'} size={'md'}/>
+                <Button text={'Dollars'} onClick={() => changeFilter('Dollars')}   variant={"circle"}  color={'primary'} size={'md'}/>
+                <Button text={'RUBLS'} onClick={() => changeFilter('RUBLS')}  variant={"circle"}  color={'primary'} size={'md'}/>
             </div>
         </div>
     );
